@@ -1,5 +1,5 @@
 'use client'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -21,8 +21,8 @@ const HeaderComponenet = ({ header }: { header: Header }) => {
     >
       <Gutter className={classes.wrap}>
         <Link href={'/'}>
-          {/* <Image src={'/logo-black.svg'} alt="logo" fill /> */}
-          <h3>The Arctic Cicada</h3>
+          <Image src={'/logo-black.svg'} alt="logo" height={50} width={170} />
+          {/* <h3>The Arctic Cicada</h3> */}
         </Link>
 
         <HeaderNav header={header} />

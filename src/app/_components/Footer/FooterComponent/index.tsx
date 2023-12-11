@@ -40,11 +40,10 @@ const FooterComponent = ({ footer }: { footer: Footer }) => {
             <Link href={'/'}>
               <h3 className={classes.logoTitle}>The Arctic Cicada</h3>
             </Link>
-            <p>{footer.copyright}</p>
+            <p>{footer?.copyright}</p>
             <div className={classes.socialLinks}>
               {navItems.map(item => {
                 const icon = item?.link?.icon as Media
-
                 return (
                   <Button
                     key={item.link.label}
